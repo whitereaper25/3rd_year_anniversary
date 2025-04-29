@@ -8,9 +8,9 @@ import BackgroundMusic from "@/components/BackgroundMusic";
 import MainContent from "@/components/MainContent";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false)
-  const [showMainContent, setShowMainContent] = useState(true)
+  const [showMainContent, setShowMainContent] = useState(false)
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleShowMainContent = () => {
