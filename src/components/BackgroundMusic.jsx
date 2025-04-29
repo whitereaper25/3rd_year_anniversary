@@ -8,7 +8,7 @@ export default function BackgroundMusic({ isMusicPlaying, setIsMusicPlaying }) {
     useEffect(() => {
         // Set default volume and autoplay on load
         if (audioRef.current) {
-            audioRef.current.volume = .4; // Set volume
+            audioRef.current.volume = .5; // Set volume
         }
         if (isMusicPlaying) {
             audioRef.current.play()
@@ -32,6 +32,7 @@ export default function BackgroundMusic({ isMusicPlaying, setIsMusicPlaying }) {
             animate={{ scale: 1 }}
             transition={{ duration: .400 }}
             className="fixed top-4 right-4 z-50">
+            {/* If you want to add background song then place the song in /public/audio folder and change the audio src accordingly */}
             <audio ref={audioRef} loop preload="auto">
                 <source src="/audio/instrumental.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
