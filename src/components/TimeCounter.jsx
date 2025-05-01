@@ -48,9 +48,9 @@ export const TimeCounter = ({ startDate, label }) => {
         <div className="mb-6">
             <h3 className="text-xl font-semibold text-purple-600 mb-2">{label}</h3>
             <div className="flex justify-center space-x-2">
-                <TimeUnit value={time.years} unit="Years" />
-                <TimeUnit value={time.months} unit="Months" />
-                <TimeUnit value={time.days} unit="Days" />
+                <TimeUnit value={time.years} unit={time.years === 1 ? "Year" : "Years"} />
+                <TimeUnit value={time.months} unit={time.months === 1 ? "Month" : "Months"} />
+                <TimeUnit value={time.days} unit={time.days === 1 ? "Day" : "Days"} />
             </div>
         </div>
     )
