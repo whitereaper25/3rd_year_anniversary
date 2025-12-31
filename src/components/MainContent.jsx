@@ -191,23 +191,22 @@ export default function MainContent() {
             <div className="flex-1 rounded-2xl overflow-y-auto overflow-x-hidden custom-scrollbar">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 rounded-2xl">
                     {[1, 2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27].map((i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: Math.min(i * 0.05, 0.6) }}
-                            className="relative aspect-square rounded-2xl overflow-hidden shadow-md cursor-pointer"
-                            onClick={() => setSelectedImage(i)}
-                        >
-                            {/* If you want to show your pics then you can save your pics in public/images folder like this 1.jpg, 2.jpg, 3.jpg then replace the src to this - /images/${i}.jpg */}
-                            <Image
-                                src={`/images/${i}.jpg`}
-                                alt={`Gallery image ${i}`}
-                                width={330}
-                                height={270}
-                                className="rounded-2xl object-cover h-full"
-                            />
-                        </motion.div>
+                                <motion.div
+                                      key={i}
+                                      initial={{ opacity: 0, scale: 0.9 }}
+                                      animate={{ opacity: 1, scale: 1 }}
+                                      transition={{ duration: 0.4, delay: Math.min(i * 0.05, 0.6) }}
+                                      className="relative aspect-square rounded-2xl overflow-hidden shadow-md cursor-pointer"
+                                      onClick={() => setSelectedImage(i)}
+                                    >
+                                      <Image
+                                        src={`/images/${i}.jpg`}
+                                        alt={`Gallery image ${i}`}
+                                        fill
+                                        sizes="(max-width: 768px) 50vw, 33vw"
+                                        className="object-cover rounded-2xl"
+                                      />
+                                </motion.div>
                     ))}
                 </div>
             </div>
