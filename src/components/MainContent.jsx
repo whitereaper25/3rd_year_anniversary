@@ -56,13 +56,72 @@ export default function MainContent() {
             <h2 className="text-3xl font-bold text-blue-600 mb-6 relative z-10">Our Journey</h2>
             <div className="space-y-4 flex-1 overflow-y-auto overflow-x-hidden rounded-xl custom-scrollbar">
                 {[
-                    { date: '30 April, 2022', event: 'The day you texted me, something beautiful began—and it hasn’t stopped since', emoji: '💬' },
-                    { date: '14 June, 2022', event: 'The day you accepted my love and took me as your own', emoji: '❤️' },
-                    { date: '7 Feb, 2025', event: 'The day we saw each other through a screen', emoji: '💻' },
-                    { date: '18 Mar, 2025', event: 'We finally met, shared our first kiss, and lost ourselves in a movie', emoji: '🎬💋' },
-                    { date: '1 May, 2025', event: 'Our first trip together… we shared not just a place, but a part of ourselves', emoji: '✈️'},
-                    { date: '.. ..., 2025', event: '..waiting for the day we start living together and you never let go of my hand', emoji: '👫' },
-                ]
+    {
+        date: '30 April, 2022',
+        event: 'The day you texted me — something beautiful began, and it never stopped growing',
+        emoji: '💬'
+    },
+    {
+        date: '14 June, 2022',
+        event: 'The day you accepted my love and chose me as yours',
+        emoji: '❤️'
+    },
+    {
+        date: '7 Feb, 2025',
+        event: 'The day we saw each other through a screen, hearts closer than ever',
+        emoji: '💻'
+    },
+    {
+        date: '18 Mar, 2025',
+        event: 'We finally met — our first kiss, a movie, and losing ourselves in the moment',
+        emoji: '🎬💋'
+    },
+    {
+        date: '1 May, 2025',
+        event: 'Our first trip together — sharing not just a place, but parts of ourselves',
+        emoji: '✈️'
+    },
+    {
+        date: '15 June, 2025',
+        event: 'Our anniversary at BBQ Nation — you walked in wearing that stunning white dress and stole my breath',
+        emoji: '🤍🔥'
+    },
+    {
+        date: '8 July, 2025',
+        event: 'Our first stay at Pinakin — cooking together, laughing, and losing ourselves in each other',
+        emoji: '🏠🍳💞'
+    },
+    {
+        date: '16 August, 2025',
+        event: 'Little Zoo in Nagpur and a movie at Eternity Mall — simple moments, perfect company',
+        emoji: '🐾🎥'
+    },
+    {
+        date: '2 September, 2025',
+        event: 'Our first long journey together — I loved every second, even if I messed up your birthday',
+        emoji: '🚌💔🎂'
+    },
+    {
+        date: '2 October, 2025',
+        event: 'Chennai again — plans ruined, but I still got to show you my world',
+        emoji: '🌊🏙️'
+    },
+    {
+        date: '21 October, 2025',
+        event: 'Diwali together — not perfect, not grand, but special because it was with you',
+        emoji: '🪔✨'
+    },
+    {
+        date: '19 November, 2025',
+        event: 'Pinakin again — I cooked everything for you this time, even the flops',
+        emoji: '🍲😄'
+    },
+    {
+        date: '24 December, 2025',
+        event: 'Your Christmas surprise — the brown jacket, the peace, the first stay that felt like pure rest',
+        emoji: '🎄🧥💝'
+    }
+]
                     .map((item, index) => (
                         <motion.div
                             key={index}
@@ -160,11 +219,11 @@ export default function MainContent() {
             <div className="bg-white rounded-xl p-6 shadow-md overflow-y-auto flex-1 custom-scrollbar">
                 <div className="relative z-10">
                     <div className="text-gray-700 text-lg leading-relaxed mb-4">
-                        <p>From the moment you entered my life, everything began to change in the most beautiful way. I was just a wanderer, lost in a world that never truly saw me—until your words found me. You brought comfort to my chaos, warmth to my silence, and joy to my darkest days. Slowly, without even realizing it, I found myself opening up, falling for the soul I’d never seen but felt deeply connected to. You became my peace, my strength, and the reason I kept going. Even when I stumbled and tried to walk away, thinking you deserved better, your love remained. And when the day finally came and I saw you standing in front of me, I knew—every moment, every struggle, every tear was worth it. You didn’t just become my girlfriend; you became my world, my dream, my home. In just a few days together, you gave me memories I’ll carry for a lifetime, a kind of love I never imagined, and a part of yourself that I’ll forever treasure. Though distance may test us and fear may whisper doubt, know this—my heart is yours and always will be. You’ve touched my soul in ways no one else ever could. You are not just the most beautiful part of my story—but without you, my story is a void waiting for its end.💖</p>
+                        <p>I don’t really know where to begin, but this year has truly been a roller coaster for us — filled with highs, lows, love, mistakes, and learning.There were moments when I hurt you, and moments when your words or impatience hurt me deeply. There were times I ruined what should have been your happiest moments, like your birthday, and many occasions where I disappointed you. I won’t deny any of that — I take responsibility for my mistakes.For the past few months especially, all I’ve been trying to do is work on myself. To become better, more stable, more understanding — someone who truly deserves you. I know I’m not perfect yet, and I may need more time, but I promise you this: I will keep putting in the effort. I won’t give up. I don’t ever want to become someone who gives hope to a girl only to break her heart. Losing you would mean losing everything, and that’s something I never want to face.At the same time, I believe that a relationship without struggles, disagreements, and growth isn’t real. If I can’t face these challenges and grow through them, how could I ever ask you to trust me with your future — or dream of a life and marriage together? Despite everything, this year was also filled with beautiful memories. I loved traveling with you, discovering new places, sharing experiences, and watching you try new cuisines. I adore how you act tough and heartless when you’re away, but turn into the cutest little kid when you’re with me — clinging to me, full of patience, warmth, and love. That side of you means everything to me.I hope this new year brings us closer than ever. I hope we start living together, travel more, laugh more, and grow stronger together. I hope I become someone who makes you feel safe, loved, and proud — someone who doesn’t give you reasons to feel hurt or disappointed.Happy New Year, my Darling.I’m choosing you, every single day. Hope you understand my emotion as well this year ❤️</p>
                     </div>
                     <p className="text-right text-rose-600 font-semibold">
                         Forever yours,<br />
-                        Your love❤️
+                        Your Daddy❤️
                     </p>
                 </div>
             </div>
@@ -268,4 +327,3 @@ export default function MainContent() {
         </div>
     )
 }
-
