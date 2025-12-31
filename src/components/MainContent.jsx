@@ -195,7 +195,7 @@ export default function MainContent() {
                             key={i}
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: i * 0.15 }}
+                            transition={{ duration: 0.5, delay: Math.min(i * 0.05, 0.6) }}
                             className="relative aspect-square rounded-2xl overflow-hidden shadow-md cursor-pointer"
                             onClick={() => setSelectedImage(i)}
                         >
