@@ -60,7 +60,7 @@ export default function Cards({ setMusicPlaying, handleShowMainContent }) {
                     <QuestionCard
                         key="main-question"
                         emoji="🥰"
-                        question="Can you be mine forever?"
+                        question="Can you be mine this year and forever?"
                         onAnswer={(answer) => {
                             if (answer) {
                                 setCardState("yesResponse")
@@ -75,7 +75,7 @@ export default function Cards({ setMusicPlaying, handleShowMainContent }) {
                     <QuestionCard
                         key="yes-response"
                         emoji="🩷"
-                        question="Yesss! You always make my heart smile! I’m so lucky to have you in my life."
+                        question="Yesss! You always break my heart and crush it but your also the reason my heart exist! So, I’m lucky to have you in my life."
                         showButtons={false}
                         btnText="More love ahead"
                         onAnswer={() => setCardState("secretCode")} // Add a new action here
@@ -100,7 +100,7 @@ export default function Cards({ setMusicPlaying, handleShowMainContent }) {
                     <QuestionCard
                         key="final-no-response"
                         emoji="🥺"
-                        question="Oh no! You can't really say no to this! You're already mine. Go back and make the right choice!"
+                        question="Ik you would have came here just to see what it says. You will lose the fingers that made u try this, Go back and say yes"
                         showButtons={false}
                         btnText="Go back"
                         onAnswer={goToMainQuestion}
