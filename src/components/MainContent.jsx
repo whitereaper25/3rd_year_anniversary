@@ -190,7 +190,7 @@ export default function MainContent() {
             <h2 className="text-3xl font-bold text-indigo-600 mb-6 relative z-10">Memorable Moments</h2>
             <div className="flex-1 rounded-2xl overflow-y-auto overflow-x-hidden custom-scrollbar">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 rounded-2xl">
-                    {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                    {[1, 2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27].map((i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, scale: 0.8 }}
